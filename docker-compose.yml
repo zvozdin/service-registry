@@ -1,0 +1,11 @@
+version: "3.0"
+
+services:
+  eureka-server-app:
+    image: eureka-server-app
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: eureka-server-app-microservices_course
+    ports:
+      - "8761:8761"
